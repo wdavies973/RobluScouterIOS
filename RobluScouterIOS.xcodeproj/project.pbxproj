@@ -12,6 +12,12 @@
 		5F9308DC214C53F40093FCD2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F9308DA214C53F40093FCD2 /* Main.storyboard */; };
 		5F9308DE214C53F40093FCD2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F9308DD214C53F40093FCD2 /* Assets.xcassets */; };
 		5F9308E1214C53F40093FCD2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F9308DF214C53F40093FCD2 /* LaunchScreen.storyboard */; };
+		5F9308EB214C57300093FCD2 /* RTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9308EA214C57300093FCD2 /* RTab.swift */; };
+		5F9308ED214C587E0093FCD2 /* RTeam.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9308EC214C587E0093FCD2 /* RTeam.swift */; };
+		5F9308EF214C59BB0093FCD2 /* RForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9308EE214C59BB0093FCD2 /* RForm.swift */; };
+		5F9308F2214C5A260093FCD2 /* RMetric.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9308F1214C5A260093FCD2 /* RMetric.swift */; };
+		5F9308F4214C5B960093FCD2 /* RBoolean.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9308F3214C5B960093FCD2 /* RBoolean.swift */; };
+		5F9308F6214C5EB10093FCD2 /* RCalculation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9308F5214C5EB10093FCD2 /* RCalculation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +28,12 @@
 		5F9308DD214C53F40093FCD2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5F9308E0214C53F40093FCD2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5F9308E2214C53F40093FCD2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F9308EA214C57300093FCD2 /* RTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RTab.swift; sourceTree = "<group>"; };
+		5F9308EC214C587E0093FCD2 /* RTeam.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RTeam.swift; sourceTree = "<group>"; };
+		5F9308EE214C59BB0093FCD2 /* RForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RForm.swift; sourceTree = "<group>"; };
+		5F9308F1214C5A260093FCD2 /* RMetric.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMetric.swift; sourceTree = "<group>"; };
+		5F9308F3214C5B960093FCD2 /* RBoolean.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RBoolean.swift; sourceTree = "<group>"; };
+		5F9308F5214C5EB10093FCD2 /* RCalculation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RCalculation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +66,7 @@
 		5F9308D5214C53F40093FCD2 /* RobluScouterIOS */ = {
 			isa = PBXGroup;
 			children = (
+				5F9308E9214C56F40093FCD2 /* models */,
 				5F9308D6214C53F40093FCD2 /* AppDelegate.swift */,
 				5F9308D8214C53F40093FCD2 /* ViewController.swift */,
 				5F9308DA214C53F40093FCD2 /* Main.storyboard */,
@@ -62,6 +75,27 @@
 				5F9308E2214C53F40093FCD2 /* Info.plist */,
 			);
 			path = RobluScouterIOS;
+			sourceTree = "<group>";
+		};
+		5F9308E9214C56F40093FCD2 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				5F9308F0214C5A030093FCD2 /* metrics */,
+				5F9308EA214C57300093FCD2 /* RTab.swift */,
+				5F9308EC214C587E0093FCD2 /* RTeam.swift */,
+				5F9308EE214C59BB0093FCD2 /* RForm.swift */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		5F9308F0214C5A030093FCD2 /* metrics */ = {
+			isa = PBXGroup;
+			children = (
+				5F9308F1214C5A260093FCD2 /* RMetric.swift */,
+				5F9308F3214C5B960093FCD2 /* RBoolean.swift */,
+				5F9308F5214C5EB10093FCD2 /* RCalculation.swift */,
+			);
+			path = metrics;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +171,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				5F9308D9214C53F40093FCD2 /* ViewController.swift in Sources */,
+				5F9308EF214C59BB0093FCD2 /* RForm.swift in Sources */,
+				5F9308EB214C57300093FCD2 /* RTab.swift in Sources */,
 				5F9308D7214C53F40093FCD2 /* AppDelegate.swift in Sources */,
+				5F9308F2214C5A260093FCD2 /* RMetric.swift in Sources */,
+				5F9308F4214C5B960093FCD2 /* RBoolean.swift in Sources */,
+				5F9308F6214C5EB10093FCD2 /* RCalculation.swift in Sources */,
+				5F9308ED214C587E0093FCD2 /* RTeam.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
