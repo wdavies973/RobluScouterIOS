@@ -1,0 +1,16 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf600
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww9000\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 Firstly, IOS significantly changes how data will need to be synced across platform.\
+\
+Because the Java editions of Roblu use Jackson (a serialization API), objects can be easily converted to and from JSON with a simple method call.\
+This won't work for Swift because even the data structures used to store data are fundamentally different. This does allow for a significant improvement\
+on the Swift port of RobluScouter. The Swift version will use a custom deserialization/serialization class that will ignore values that aren't used in RobluScouter\
+but had to be included for Jackson to work correctly. One issue that will have to be checked here is that Roblu Master has to be tweaked a bit so it can\
+ignore a lack of values received from Roblu Scouter IOS versions.\
+\
+The most difficult part of this project will be supporting cross platform serialization and making it work with everything.}

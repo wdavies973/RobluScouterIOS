@@ -10,24 +10,43 @@ import Foundation
 
 class RTab {
     
-    private var ID: Int?;
-
-    private var team: RTeam?;
+    // RTabs are identified by their title, no duplicates!
+    public var title: String;
+    
+    public var metrics: [RMetric]?;
+    
+    // FALSE for blue alliance, TRUE for red alliance
+    public var redAlliance: Bool;
     
     /*
-     * Meta data
+     * This is a helper variable for teams who use the Red Device, Blue Device, etc. scouting system.
+     * This variable can only be imported from the TBA.
+     * Values 1-3 represent red alliance, 4-6 represent Blue alliance position.
+     * However, use the redAlliance variable for display colors, because that's what the user can
+     * change and modify. This should ONLY be used for sorting the4 Red Device, Blue Device checkout order.
      */
-    private var status: Int?;
-    private var nameTag: String?;
-    private var time: Int64?;
-    private var customRelevance: Int?;
+    public var alliancePosition: Int;
     
-    // Empty constructor required for deserialization
-    init() {}
+    // was the match won?
+    public var won: Bool;
     
-    init(team: Rteam) {
-        self.team = team;
+    // The time that this match will occur, this is raw UNIX time, not a clean timestamp
+    public var time: Int64;
+    
+    // Stores a list of edits made to this RTab
+    public var edits: [(author: String, time: Int64)]?;
+    
+    init(title: String, metrics: [RMetric], redAlliance: Bool, won: Bool, time: Int64) {
+        self.title = title;
+        self.metrics = metrics;
+        self.redAlliance = redAlliance;
+        self.won = won;
+        self.time = time;
+        
+        self.alliancePosition = 0; // disabled (probably)
     }
+    
+    
 }
 
 

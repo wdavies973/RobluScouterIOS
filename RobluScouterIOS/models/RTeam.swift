@@ -31,7 +31,6 @@ class RTeam {
     // Verifies the team and form are in sync
     public func verify(form: RForm) {
         
-        
     }
     
 }
