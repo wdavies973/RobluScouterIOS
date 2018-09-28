@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5F355725215ECB7F00E9EE99 /* RCheckbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F355724215ECB7F00E9EE99 /* RCheckbox.swift */; };
+		5F355727215ECF3E00E9EE99 /* RChooser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F355726215ECF3E00E9EE99 /* RChooser.swift */; };
+		5F355729215ED0F200E9EE99 /* RCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F355728215ED0F200E9EE99 /* RCounter.swift */; };
+		5F35572B215ED2C600E9EE99 /* RDivider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F35572A215ED2C600E9EE99 /* RDivider.swift */; };
+		5F35572D215ED39A00E9EE99 /* RSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F35572C215ED39A00E9EE99 /* RSlider.swift */; };
+		5F35572F215ED45200E9EE99 /* RStopwatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F35572E215ED45200E9EE99 /* RStopwatch.swift */; };
+		5F355731215ED51200E9EE99 /* RTextfield.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F355730215ED51200E9EE99 /* RTextfield.swift */; };
 		5F9308D7214C53F40093FCD2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9308D6214C53F40093FCD2 /* AppDelegate.swift */; };
 		5F9308D9214C53F40093FCD2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9308D8214C53F40093FCD2 /* ViewController.swift */; };
 		5F9308DC214C53F40093FCD2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F9308DA214C53F40093FCD2 /* Main.storyboard */; };
@@ -21,6 +28,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5F355724215ECB7F00E9EE99 /* RCheckbox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RCheckbox.swift; sourceTree = "<group>"; };
+		5F355726215ECF3E00E9EE99 /* RChooser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RChooser.swift; sourceTree = "<group>"; };
+		5F355728215ED0F200E9EE99 /* RCounter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RCounter.swift; sourceTree = "<group>"; };
+		5F35572A215ED2C600E9EE99 /* RDivider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RDivider.swift; sourceTree = "<group>"; };
+		5F35572C215ED39A00E9EE99 /* RSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSlider.swift; sourceTree = "<group>"; };
+		5F35572E215ED45200E9EE99 /* RStopwatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RStopwatch.swift; sourceTree = "<group>"; };
+		5F355730215ED51200E9EE99 /* RTextfield.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RTextfield.swift; sourceTree = "<group>"; };
 		5F9308D3214C53F40093FCD2 /* RobluScouterIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RobluScouterIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F9308D6214C53F40093FCD2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5F9308D8214C53F40093FCD2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -94,6 +108,13 @@
 				5F9308F1214C5A260093FCD2 /* RMetric.swift */,
 				5F9308F3214C5B960093FCD2 /* RBoolean.swift */,
 				5F9308F5214C5EB10093FCD2 /* RCalculation.swift */,
+				5F355724215ECB7F00E9EE99 /* RCheckbox.swift */,
+				5F355726215ECF3E00E9EE99 /* RChooser.swift */,
+				5F355728215ED0F200E9EE99 /* RCounter.swift */,
+				5F35572A215ED2C600E9EE99 /* RDivider.swift */,
+				5F35572C215ED39A00E9EE99 /* RSlider.swift */,
+				5F35572E215ED45200E9EE99 /* RStopwatch.swift */,
+				5F355730215ED51200E9EE99 /* RTextfield.swift */,
 			);
 			path = metrics;
 			sourceTree = "<group>";
@@ -172,11 +193,18 @@
 			files = (
 				5F9308D9214C53F40093FCD2 /* ViewController.swift in Sources */,
 				5F9308EF214C59BB0093FCD2 /* RForm.swift in Sources */,
+				5F355731215ED51200E9EE99 /* RTextfield.swift in Sources */,
+				5F355729215ED0F200E9EE99 /* RCounter.swift in Sources */,
+				5F355727215ECF3E00E9EE99 /* RChooser.swift in Sources */,
+				5F35572D215ED39A00E9EE99 /* RSlider.swift in Sources */,
 				5F9308EB214C57300093FCD2 /* RTab.swift in Sources */,
 				5F9308D7214C53F40093FCD2 /* AppDelegate.swift in Sources */,
 				5F9308F2214C5A260093FCD2 /* RMetric.swift in Sources */,
+				5F35572F215ED45200E9EE99 /* RStopwatch.swift in Sources */,
+				5F355725215ECB7F00E9EE99 /* RCheckbox.swift in Sources */,
 				5F9308F4214C5B960093FCD2 /* RBoolean.swift in Sources */,
 				5F9308F6214C5EB10093FCD2 /* RCalculation.swift in Sources */,
+				5F35572B215ED2C600E9EE99 /* RDivider.swift in Sources */,
 				5F9308ED214C587E0093FCD2 /* RTeam.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

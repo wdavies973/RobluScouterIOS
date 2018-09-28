@@ -11,19 +11,19 @@ import Foundation
 // Represents a Boolean metric storing a TRUE or FALSE value
 class RBoolean : RMetric {
     
-    private var value: Bool;
+    public var value: Bool;
     
-    init(_ ID: Int, _ title: String, _ value: Bool) {
+    init(ID: Int, title: String, value: Bool) {
         self.value = value;
         super.init(ID: ID, title: title);
     }
     
-    override func getFormDescriptor() -> (String) {
+    override func getFormDescriptor() -> String {
         return "Type: Boolean\nDefault value: " + String(value);
     }
     
-    override func clone() -> (RMetric) {
-        return RBoolean(self.ID, self.title, self.value);
+    override func clone() -> RMetric {
+        return RBoolean(ID: self.ID, title: self.title, value: self.value);
     }
     
 }
