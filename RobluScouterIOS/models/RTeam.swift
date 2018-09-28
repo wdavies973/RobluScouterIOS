@@ -10,12 +10,12 @@ import Foundation
 
 class RTeam {
     
-    private var ID: Int
-    private var name: String
-    private var number: Int
-    private var lastEdit: Int64
-    private var tabs:[RTab]
-    private var page: Int
+    private var ID: Int?
+    private var name: String?
+    private var number: Int?
+    private var lastEdit: Int64?
+    private var tabs:[RTab]?
+    private var page: Int?
     
     init() {}
     

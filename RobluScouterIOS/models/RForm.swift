@@ -10,8 +10,8 @@ import Foundation
 
 class RForm {
     
-    private var pit:[RMetric];
-    private var match:[RMetric];
+    private var pit:[RMetric]?;
+    private var match:[RMetric]?;
     
     init() {}
     

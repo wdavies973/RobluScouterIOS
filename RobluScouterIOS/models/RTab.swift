@@ -10,17 +10,17 @@ import Foundation
 
 class RTab {
     
-    private var ID: Int
+    private var ID: Int?;
 
-    private var team: RTeam;
+    private var team: RTeam?;
     
     /*
      * Meta data
      */
-    private var status: Int;
-    private var nameTag: String;
-    private var time: Int64;
-    private var customRelevance: Int;
+    private var status: Int?;
+    private var nameTag: String?;
+    private var time: Int64?;
+    private var customRelevance: Int?;
     
     // Empty constructor required for deserialization
     init() {}
