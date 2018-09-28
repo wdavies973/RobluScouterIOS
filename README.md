@@ -14,6 +14,8 @@ the inner workings of Roblu, I would appreciate any help in this area.
 UI would be the most useful for me to have someone do at the moment. I'd recommend downloading Roblu Scouter on the Google Play
 store and building a UI exactly as that one. Later, I'll be able to hook up the syncing code to your UI.
 
+Otherwise, literally just pick any section of code from RobluScouter (in utils, notifications, whatever) and port it to IOS. 
+
 A few other small notes:
 - RGallery won't be included in the first release to save development time. 
 - For the time being, only Roblu Scouter is getting ported to IOS
