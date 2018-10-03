@@ -46,7 +46,19 @@ class RTab {
         self.alliancePosition = 0; // disabled (probably)
     }
     
-    
+    func getSortValue() -> Int {
+        var val: Int = 0;
+        if(title.lowercased().contains("quals")) {
+            val += (100 + Int(title.lowercased().split(separator: " ")[1])!);
+        }
+        else if(title.lowercased().contains("quarters")) {
+            val += (1000 + 10 * Int(title.lowercased().split(separator: " ")[1])! + Int(title.lowercased().split(separator: " ")[3]))!));
+        }
+        else if(title.lowercased().contains("semis")) {val += 10000;}
+        else if(title.lowercased().contains("finals")) {val += 100000;}
+        
+        return val;
+    }
 }
 
 

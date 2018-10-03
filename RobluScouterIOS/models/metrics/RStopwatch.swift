@@ -11,9 +11,9 @@ import Foundation
 class RStopwatch : RMetric {
     
     // Current time on the stopwatch
-    private var time: Double;
+    public var time: Double;
     // Laps counter
-    private var times: [Double]?;
+    public var times: [Double]?;
     
     init(ID: Int, title: String, time: Double) {
         self.time = time;
