@@ -92,10 +92,12 @@ class RTeam {
             if(tabs![i].title != "Pit") {temp = form.match!;}
             for var j in 0..<temp.count {
                 for var k in 0..<tabs![i].metrics!.count {
-                    if(object_getClassName(temp[j]) != object_getClassName(tabs![i].metrics![k])) {
-                        tabs![i].metrics!.remove(at: k);
-                        j = 0;
-                        k = 0;
+                    if(tabs![i].metrics![k].ID == temp[j].ID) {
+                        if(object_getClassName(temp[j]) != object_getClassName(tabs![i].metrics![k])) {
+                            tabs![i].metrics!.remove(at: k);
+                            j = 0;
+                            k = 0;
+                        }
                     }
                 }
             }
@@ -144,7 +146,7 @@ class RTeam {
                 for k in 0..<tabs![i].metrics!.count {
                     if(temp[j].ID == tabs![i].metrics![k].ID) {
                         let e: RMetric = temp[j]; // e if from the form
-                        let s = tabs![j].metrics![k]; // s is the value being updated
+                        let s = tabs![i].metrics![k]; // s is the value being updated
                         
                         if(e is RBoolean && !s.isModified() && s is RBoolean) {
                             let sboolean: RBoolean = s as! RBoolean;
@@ -197,7 +199,7 @@ class RTeam {
     
     func addTab(tab: RTab) -> Int {
         tabs?.append(tab);
-        images.sorted(by: { $0.fileID > $1.fileID })
+        // TODO tabs need to be sorted here
         for i in stride(from: 0, to: self.tabs!.count, by: 1) {
             if(self.tabs![i].title == tab.title) { return i; }
         }

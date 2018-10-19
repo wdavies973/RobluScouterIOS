@@ -26,6 +26,9 @@
 		5F9308F2214C5A260093FCD2 /* RMetric.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9308F1214C5A260093FCD2 /* RMetric.swift */; };
 		5F9308F4214C5B960093FCD2 /* RBoolean.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9308F3214C5B960093FCD2 /* RBoolean.swift */; };
 		5F9308F6214C5EB10093FCD2 /* RCalculation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9308F5214C5EB10093FCD2 /* RCalculation.swift */; };
+		5FA41D70217A5481002637B0 /* RSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA41D6F217A5481002637B0 /* RSettings.swift */; };
+		5FA41D72217A557A002637B0 /* RSyncSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA41D71217A557A002637B0 /* RSyncSettings.swift */; };
+		5FA41D74217A561A002637B0 /* RCheckout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA41D73217A561A002637B0 /* RCheckout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +53,9 @@
 		5F9308F1214C5A260093FCD2 /* RMetric.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMetric.swift; sourceTree = "<group>"; };
 		5F9308F3214C5B960093FCD2 /* RBoolean.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RBoolean.swift; sourceTree = "<group>"; };
 		5F9308F5214C5EB10093FCD2 /* RCalculation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RCalculation.swift; sourceTree = "<group>"; };
+		5FA41D6F217A5481002637B0 /* RSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSettings.swift; sourceTree = "<group>"; };
+		5FA41D71217A557A002637B0 /* RSyncSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSyncSettings.swift; sourceTree = "<group>"; };
+		5FA41D73217A561A002637B0 /* RCheckout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RCheckout.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +107,9 @@
 				5F9308EC214C587E0093FCD2 /* RTeam.swift */,
 				5F9308EE214C59BB0093FCD2 /* RForm.swift */,
 				5F355732215ED81800E9EE99 /* Notes.rtf */,
+				5FA41D6F217A5481002637B0 /* RSettings.swift */,
+				5FA41D71217A557A002637B0 /* RSyncSettings.swift */,
+				5FA41D73217A561A002637B0 /* RCheckout.swift */,
 			);
 			path = models;
 			sourceTree = "<group>";
@@ -205,9 +214,12 @@
 				5F9308D7214C53F40093FCD2 /* AppDelegate.swift in Sources */,
 				5F9308F2214C5A260093FCD2 /* RMetric.swift in Sources */,
 				5F35572F215ED45200E9EE99 /* RStopwatch.swift in Sources */,
+				5FA41D74217A561A002637B0 /* RCheckout.swift in Sources */,
 				5F355725215ECB7F00E9EE99 /* RCheckbox.swift in Sources */,
 				5F9308F4214C5B960093FCD2 /* RBoolean.swift in Sources */,
 				5F9308F6214C5EB10093FCD2 /* RCalculation.swift in Sources */,
+				5FA41D72217A557A002637B0 /* RSyncSettings.swift in Sources */,
+				5FA41D70217A5481002637B0 /* RSettings.swift in Sources */,
 				5F35572B215ED2C600E9EE99 /* RDivider.swift in Sources */,
 				5F9308ED214C587E0093FCD2 /* RTeam.swift in Sources */,
 			);
