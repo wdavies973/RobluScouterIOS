@@ -24,5 +24,4 @@ class RCheckout {
     init(team: RTeam) {
         self.team = team;
     }
-    
 }

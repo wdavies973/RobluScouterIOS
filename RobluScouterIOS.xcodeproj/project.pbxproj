@@ -29,6 +29,8 @@
 		5FA41D70217A5481002637B0 /* RSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA41D6F217A5481002637B0 /* RSettings.swift */; };
 		5FA41D72217A557A002637B0 /* RSyncSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA41D71217A557A002637B0 /* RSyncSettings.swift */; };
 		5FA41D74217A561A002637B0 /* RCheckout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA41D73217A561A002637B0 /* RCheckout.swift */; };
+		5FA41D7A217A5F2C002637B0 /* IO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA41D79217A5F2C002637B0 /* IO.swift */; };
+		5FA41D7C217A61FF002637B0 /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA41D7B217A61FF002637B0 /* JSON.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +58,8 @@
 		5FA41D6F217A5481002637B0 /* RSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSettings.swift; sourceTree = "<group>"; };
 		5FA41D71217A557A002637B0 /* RSyncSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSyncSettings.swift; sourceTree = "<group>"; };
 		5FA41D73217A561A002637B0 /* RCheckout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RCheckout.swift; sourceTree = "<group>"; };
+		5FA41D79217A5F2C002637B0 /* IO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IO.swift; sourceTree = "<group>"; };
+		5FA41D7B217A61FF002637B0 /* JSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSON.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +92,7 @@
 		5F9308D5214C53F40093FCD2 /* RobluScouterIOS */ = {
 			isa = PBXGroup;
 			children = (
+				5FA41D78217A5F0D002637B0 /* io */,
 				5F9308E9214C56F40093FCD2 /* models */,
 				5F9308D6214C53F40093FCD2 /* AppDelegate.swift */,
 				5F9308D8214C53F40093FCD2 /* ViewController.swift */,
@@ -129,6 +134,15 @@
 				5F355730215ED51200E9EE99 /* RTextfield.swift */,
 			);
 			path = metrics;
+			sourceTree = "<group>";
+		};
+		5FA41D78217A5F0D002637B0 /* io */ = {
+			isa = PBXGroup;
+			children = (
+				5FA41D79217A5F2C002637B0 /* IO.swift */,
+				5FA41D7B217A61FF002637B0 /* JSON.swift */,
+			);
+			path = io;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -215,12 +229,14 @@
 				5F9308F2214C5A260093FCD2 /* RMetric.swift in Sources */,
 				5F35572F215ED45200E9EE99 /* RStopwatch.swift in Sources */,
 				5FA41D74217A561A002637B0 /* RCheckout.swift in Sources */,
+				5FA41D7C217A61FF002637B0 /* JSON.swift in Sources */,
 				5F355725215ECB7F00E9EE99 /* RCheckbox.swift in Sources */,
 				5F9308F4214C5B960093FCD2 /* RBoolean.swift in Sources */,
 				5F9308F6214C5EB10093FCD2 /* RCalculation.swift in Sources */,
 				5FA41D72217A557A002637B0 /* RSyncSettings.swift in Sources */,
 				5FA41D70217A5481002637B0 /* RSettings.swift in Sources */,
 				5F35572B215ED2C600E9EE99 /* RDivider.swift in Sources */,
+				5FA41D7A217A5F2C002637B0 /* IO.swift in Sources */,
 				5F9308ED214C587E0093FCD2 /* RTeam.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
