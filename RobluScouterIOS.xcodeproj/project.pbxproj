@@ -31,6 +31,7 @@
 		5FA41D74217A561A002637B0 /* RCheckout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA41D73217A561A002637B0 /* RCheckout.swift */; };
 		5FA41D7A217A5F2C002637B0 /* IO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA41D79217A5F2C002637B0 /* IO.swift */; };
 		5FA41D7C217A61FF002637B0 /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA41D7B217A61FF002637B0 /* JSON.swift */; };
+		5FE13FE8218114F300658DA4 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE13FE7218114F300658DA4 /* Package.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +61,7 @@
 		5FA41D73217A561A002637B0 /* RCheckout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RCheckout.swift; sourceTree = "<group>"; };
 		5FA41D79217A5F2C002637B0 /* IO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IO.swift; sourceTree = "<group>"; };
 		5FA41D7B217A61FF002637B0 /* JSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSON.swift; sourceTree = "<group>"; };
+		5FE13FE7218114F300658DA4 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				5F9308DD214C53F40093FCD2 /* Assets.xcassets */,
 				5F9308DF214C53F40093FCD2 /* LaunchScreen.storyboard */,
 				5F9308E2214C53F40093FCD2 /* Info.plist */,
+				5FE13FE7218114F300658DA4 /* Package.swift */,
 			);
 			path = RobluScouterIOS;
 			sourceTree = "<group>";
@@ -221,6 +224,7 @@
 				5F9308D9214C53F40093FCD2 /* ViewController.swift in Sources */,
 				5F9308EF214C59BB0093FCD2 /* RForm.swift in Sources */,
 				5F355731215ED51200E9EE99 /* RTextfield.swift in Sources */,
+				5FE13FE8218114F300658DA4 /* Package.swift in Sources */,
 				5F355729215ED0F200E9EE99 /* RCounter.swift in Sources */,
 				5F355727215ECF3E00E9EE99 /* RChooser.swift in Sources */,
 				5F35572D215ED39A00E9EE99 /* RSlider.swift in Sources */,

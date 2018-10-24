@@ -8,7 +8,7 @@
 
 import Foundation
 
-class RForm {
+class RForm : Mappable {
     
     public var pit:[RMetric]?;
     public var match:[RMetric]?;
