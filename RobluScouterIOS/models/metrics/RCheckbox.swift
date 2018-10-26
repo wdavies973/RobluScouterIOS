@@ -7,15 +7,20 @@
 //
 
 import Foundation
+import ObjectMapper
 
 // Represents a list of checkboxes that have a title and a TRUE or FALSE value
 class RCheckbox : RMetric {
     
     public var values: [(item: String, value: Bool)]?;
     
+    required init?(map: Map) {
+        super.init(ID: 0, title: "");
+    }
+    
     init(ID: Int, title: String, values: [(item: String, value: Bool)]) {
-        self.values = values;
         super.init(ID: ID, title: title);
+        self.values = values;
         if(values.count == 0) {
             fatalError("Values cannot be null or empty, this should be caught by the form editor");
         }
@@ -30,7 +35,11 @@ class RCheckbox : RMetric {
     }
     
     override func clone() -> RMetric {
-        return RCheckbox(ID: self.ID, title: self.title, values: self.values!);
+        return RCheckbox(ID: self.ID!, title: self.title!, values: self.values!);
+    }
+    
+    override func mapping(map: Map) {
+        values <- map["values"];
     }
     
 }

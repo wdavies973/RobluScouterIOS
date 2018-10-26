@@ -7,8 +7,9 @@
 //
 
 import Foundation
+import ObjectMapper
 
-class RTeam {
+class RTeam : Mappable {
     
     private var ID: Int?
     private var name: String?
@@ -17,7 +18,18 @@ class RTeam {
     private var tabs:[RTab]?
     private var page: Int?
     
-    init() {}
+    required init?(map: Map) {
+        
+    }
+    
+    func mapping(map: Map) {
+        ID <- map["ID"];
+        name <- map["name"];
+        number <- map["number"];
+        lastEdit <- map["lastEdit"];
+        tabs <- map["tabs"];
+        page <- map["page"];
+    }
     
     init(name: String, number: Int, ID: Int) {
         self.name = name;
@@ -170,7 +182,7 @@ class RTeam {
                         } else if(e is RStopwatch && !s.isModified() && s is RStopwatch) {
                             (s as! RStopwatch).time = (e as! RStopwatch).time;
                             // Possibly laps need to be copied?
-                        } else if(e is RTextfield && !s.isModified() && !(e as! RTextfield).oneLine) {
+                        } else if(e is RTextfield && !s.isModified() && !(e as! RTextfield).oneLine!) {
                             (s as! RTextfield).text = (e as! RTextfield).text;
                         } else if(e is RChooser && s is RChooser) {
                             (s as! RChooser).values = (e as! RChooser).values;

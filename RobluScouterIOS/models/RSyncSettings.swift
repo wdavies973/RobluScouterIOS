@@ -7,8 +7,9 @@
 //
 
 import Foundation
+import ObjectMapper
 
-class RSyncSettings {
+class RSyncSettings : Mappable {
     
     public var teamNumber: Int?;
     public var eventName: String?;
@@ -16,9 +17,21 @@ class RSyncSettings {
     public var checkoutSyncIDs: [(ID: Int, time: Int64)]?;
     public var lastBluetoothCheckoutSync: Int64?;
     
+    required init?(map: Map) {
+        
+    }
+    
     init() {
         if(self.lastBluetoothCheckoutSync == nil) {
             checkoutSyncIDs = [];
         }
+    }
+    
+    func mapping(map: Map) {
+        teamNumber <- map["teamNumber"];
+        eventName <- map["eventName"];
+        teamSyncID <- map["teamSyncID"];
+        checkoutSyncIDs <- map["checkoutSyncIDs"];
+        lastBluetoothCheckoutSync <- map["lastBluetoothCheckoutSync"];
     }
 }

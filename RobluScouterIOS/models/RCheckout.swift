@@ -7,8 +7,9 @@
 //
 
 import Foundation
+import ObjectMapper
 
-class RCheckout {
+class RCheckout : Mappable {
     
     // Content
     public var ID: Int?;
@@ -21,7 +22,19 @@ class RCheckout {
 
     public var customRelevance: Int?; // transient!
     
+    required init?(map: Map) {
+        
+    }
+    
     init(team: RTeam) {
         self.team = team;
+    }
+    
+    func mapping(map: Map) {
+        ID <- map["ID"];
+        team <- map["team"];
+        status <- map["status"];
+        nameTag <- map["nameTag"];
+        time <- map["time"];
     }
 }

@@ -7,16 +7,17 @@
 //
 
 import Foundation
+import ObjectMapper
 
-class RSettings {
+class RSettings : Mappable {
     
     public var code: String?;
     public var name: String?;
     
     // Preferences
-    public var showPit: Bool;
-    public var showCompleted: Bool;
-    public var showCheckedOut: Bool;
+    public var showPit: Bool?;
+    public var showCompleted: Bool?;
+    public var showCheckedOut: Bool?;
     
     public var serverIP: String?;
     public var bluetoothServerMACs: [String]?;
@@ -28,8 +29,12 @@ class RSettings {
      * 4-6 = Blue Devices
      * 7 = Pit
      */
-    public var autoAssignmentMode: Int;
-    public var syncDisabled: Bool;
+    public var autoAssignmentMode: Int?;
+    public var syncDisabled: Bool?;
+    
+    required init?(map: Map) {
+        
+    }
     
     init() {
         showPit = true;
@@ -43,6 +48,15 @@ class RSettings {
     
     func setServerIPToDefault() {
         self.serverIP = "ec2-13-59-164-241.us-east-2.compute.amazonaws.com";
+    }
+    
+    func mapping(map: Map) {
+        code <- map["code"];
+        name <- map["code"];
+        showPit <- map["showPit"];
+        showCompleted <- map["showCompleted"];
+        serverIP <- map["serverIP"];
+        bluetoothServerMACs <- map["bluetoothServerMACs"];
     }
     
 }

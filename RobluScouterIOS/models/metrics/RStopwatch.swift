@@ -7,29 +7,39 @@
 //
 
 import Foundation
+import ObjectMapper
 
 class RStopwatch : RMetric {
     
     // Current time on the stopwatch
-    public var time: Double;
+    public var time: Double?;
     // Laps counter
     public var times: [Double]?;
     
+    required init?(map: Map) {
+        super.init(ID: 0, title: "");
+    }
+    
     init(ID: Int, title: String, time: Double) {
-        self.time = time;
         super.init(ID: ID, title: title);
+        self.time = time;
     }
     
     override func getFormDescriptor() -> String {
-        return "Type: Stopwatch\nDefault value: " + String(time);
+        return "Type: Stopwatch\nDefault value: " + String(describing: time!);
     }
     
     override func clone() -> RMetric {
-        return RStopwatch(ID: self.ID, title: self.title, time: self.time);
+        return RStopwatch(ID: self.ID!, title: self.title!, time: self.time!);
     }
     
     override func toString() -> String {
-        return String(time);
+        return String(time!);
+    }
+    
+    override func mapping(map: Map) {
+        time <- map["time"]
+        times <- map["times"]
     }
     
 }

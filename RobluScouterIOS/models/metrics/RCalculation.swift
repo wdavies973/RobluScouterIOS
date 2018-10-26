@@ -7,20 +7,25 @@
 //
 
 import Foundation
+import ObjectMapper
 
 // Represents a custom calculation with other metrics as variables
 class RCalculation : RMetric {
     
     // Stores the last value of the calculation, call getValue() to update this
-    public var lastValue: Double;
+    public var lastValue: Double?;
     
     // Stores the symbolic formula in plaintext
-    public var calculation: String;
+    public var calculation: String?;
+    
+    required init?(map: Map) {
+        super.init(ID: 0, title: "");
+    }
     
     override init(ID: Int, title: String) {
+        super.init(ID: ID, title: title);
         self.calculation = "";
         self.lastValue = 0.0;
-        super.init(ID: ID, title: title);
     }
     
     // Substitutes actual values into the equation and computes a numerical result.
@@ -29,7 +34,7 @@ class RCalculation : RMetric {
         if(calculation == "") { return "Bad equation"; }
         
         do {
-            var equation: String = calculation;
+            var equation: String = calculation!;
             
             for metric in metrics {
                 
@@ -41,12 +46,12 @@ class RCalculation : RMetric {
                 // Replace the variable with the metric value, this will depend on the type of the metric
                 // since we can only use metrics that support a numerical return type
                 if(metric is RCounter || metric is RStopwatch || metric is RSlider) {
-                    equation = equation.replacingOccurrences(of: metric.title, with: metric.toString());
+                    equation = equation.replacingOccurrences(of: metric.title!, with: metric.toString());
                 }
                 else if(metric is RCalculation) { // Also support using other RCalculations as inputs
-                    if(equation.range(of: metric.title) == nil) {
+                    if(equation.range(of: metric.title!) == nil) {
                         let rcalc = metric as? RCalculation;
-                        equation = equation.replacingOccurrences(of: metric.title, with: rcalc!.getValue(metrics: metrics));
+                        equation = equation.replacingOccurrences(of: metric.title!, with: rcalc!.getValue(metrics: metrics));
                     }
                 }
                 
@@ -57,24 +62,29 @@ class RCalculation : RMetric {
             
             // At this point, the equation is now ready to be evaluated via a 3rd party library
             self.lastValue = 0; // this should be replaced by library call
-            return String(self.lastValue);
+            return String(self.lastValue!);
         } catch {
             return "Bad equation";
         }
     }
     
     override func getFormDescriptor() -> String {
-        return "Type: Calculation metric\nCalculation: " + calculation;
+        return "Type: Calculation metric\nCalculation: " + calculation!;
     }
     
     override func clone() -> RMetric {
-        let metric = RCalculation(ID: self.ID, title: self.title);
+        let metric = RCalculation(ID: self.ID!, title: self.title!);
         metric.calculation = self.calculation;
         return metric;
     }
     
     override func toString() -> String {
-        return String(lastValue);
+        return String(lastValue!);
+    }
+    
+    override func mapping(map: Map) {
+        lastValue <- map["lastValue"];
+        calculation <- map["lastValue"];
     }
     
     
