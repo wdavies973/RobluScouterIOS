@@ -10,16 +10,16 @@ import Foundation
 
 class IO {
     
-    func loadSyncSettings() -> RSyncSettings {
-        
+    func loadSyncSettings() -> RSyncSettings? {
+        return nil;
     }
     
     func saveSyncSettings(syncSettings: RSyncSettings) {
         
     }
     
-    func loadSettings() -> RSettings {
-        
+    func loadSettings() -> RSettings? {
+        return nil;
     }
     
     func saveSettings(settings: RSettings) {
@@ -38,12 +38,12 @@ class IO {
         
     }
     
-    func loadCheckout(ID: Int) -> RCheckout {
-        
+    func loadCheckout(ID: Int) -> RCheckout? {
+        return nil;
     }
     
     func loadCheckouts() -> [RCheckout]? {
-        
+        return nil;
     }
     
     /*
@@ -53,8 +53,8 @@ class IO {
         
     }
     
-    func loadMyCheckout(ID: Int) -> RCheckout {
-        
+    func loadMyCheckout(ID: Int) -> RCheckout? {
+        return nil;
     }
     
     func deleteMyCheckout(ID: Int) {
@@ -62,7 +62,7 @@ class IO {
     }
     
     func loadMyCheckouts() -> [RCheckout]? {
-    
+        return nil;
     }
     
     /*
@@ -72,18 +72,18 @@ class IO {
         
     }
     
-    func loadPendingCheckout(ID: Int) -> RCheckout {
-        
+    func loadPendingCheckout(ID: Int) -> RCheckout? {
+        return nil;
     }
     
     func loadPendingCheckouts() -> [RCheckout]? {
-        
+        return nil;
     }
     
     /*
      * Utility
      */
-    func clearCheckouts() -> {
+    func clearCheckouts() {
         
     }
     

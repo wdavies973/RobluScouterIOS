@@ -15,6 +15,7 @@
 		5F35572F215ED45200E9EE99 /* RStopwatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F35572E215ED45200E9EE99 /* RStopwatch.swift */; };
 		5F355731215ED51200E9EE99 /* RTextfield.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F355730215ED51200E9EE99 /* RTextfield.swift */; };
 		5F355733215ED81800E9EE99 /* Notes.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 5F355732215ED81800E9EE99 /* Notes.rtf */; };
+		5F4C2F4E2183946300F7DE18 /* ObjectMapper.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5F4C2F3C2183944600F7DE18 /* ObjectMapper.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5F9308D7214C53F40093FCD2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9308D6214C53F40093FCD2 /* AppDelegate.swift */; };
 		5F9308D9214C53F40093FCD2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9308D8214C53F40093FCD2 /* ViewController.swift */; };
 		5F9308DC214C53F40093FCD2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F9308DA214C53F40093FCD2 /* Main.storyboard */; };
@@ -31,8 +32,86 @@
 		5FA41D74217A561A002637B0 /* RCheckout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA41D73217A561A002637B0 /* RCheckout.swift */; };
 		5FA41D7A217A5F2C002637B0 /* IO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA41D79217A5F2C002637B0 /* IO.swift */; };
 		5FA41D7C217A61FF002637B0 /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA41D7B217A61FF002637B0 /* JSON.swift */; };
-		5FE13FE8218114F300658DA4 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE13FE7218114F300658DA4 /* Package.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5F4C2F3B2183944600F7DE18 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5F4C2F302183944600F7DE18 /* ObjectMapper.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6AAC8F7619F03C2900E7A677;
+			remoteInfo = "ObjectMapper-iOS";
+		};
+		5F4C2F3D2183944600F7DE18 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5F4C2F302183944600F7DE18 /* ObjectMapper.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = CD1602FF1AC023D5000CD69A;
+			remoteInfo = "ObjectMapper-Mac";
+		};
+		5F4C2F3F2183944600F7DE18 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5F4C2F302183944600F7DE18 /* ObjectMapper.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6A2AD03D1B2C78540097E150;
+			remoteInfo = "ObjectMapper-watchOS";
+		};
+		5F4C2F412183944600F7DE18 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5F4C2F302183944600F7DE18 /* ObjectMapper.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6A05B7A61BE274BE00F19B53;
+			remoteInfo = "ObjectMapper-tvOS";
+		};
+		5F4C2F432183944600F7DE18 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5F4C2F302183944600F7DE18 /* ObjectMapper.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6AAC8F8119F03C2900E7A677;
+			remoteInfo = "ObjectMapper-iOSTests";
+		};
+		5F4C2F452183944600F7DE18 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5F4C2F302183944600F7DE18 /* ObjectMapper.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = CD1603091AC023D6000CD69A;
+			remoteInfo = "ObjectMapper-MacTests";
+		};
+		5F4C2F472183944600F7DE18 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5F4C2F302183944600F7DE18 /* ObjectMapper.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6A05B7AF1BE274BE00F19B53;
+			remoteInfo = "ObjectMapper-tvOSTests";
+		};
+		5F4C2F492183944600F7DE18 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5F4C2F302183944600F7DE18 /* ObjectMapper.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DBB9B41F2142A25100078E5A;
+			remoteInfo = "ObjectMapper-Mac-Static";
+		};
+		5F4C2F4B2183945800F7DE18 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5F4C2F302183944600F7DE18 /* ObjectMapper.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 6AAC8F7519F03C2900E7A677;
+			remoteInfo = "ObjectMapper-iOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5F4C2F4D2183945B00F7DE18 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				5F4C2F4E2183946300F7DE18 /* ObjectMapper.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		5F355724215ECB7F00E9EE99 /* RCheckbox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RCheckbox.swift; sourceTree = "<group>"; };
@@ -43,6 +122,7 @@
 		5F35572E215ED45200E9EE99 /* RStopwatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RStopwatch.swift; sourceTree = "<group>"; };
 		5F355730215ED51200E9EE99 /* RTextfield.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RTextfield.swift; sourceTree = "<group>"; };
 		5F355732215ED81800E9EE99 /* Notes.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = Notes.rtf; sourceTree = "<group>"; };
+		5F4C2F302183944600F7DE18 /* ObjectMapper.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ObjectMapper.xcodeproj; path = RobluScouterIOS/ObjectMapper/ObjectMapper.xcodeproj; sourceTree = "<group>"; };
 		5F9308D3214C53F40093FCD2 /* RobluScouterIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RobluScouterIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F9308D6214C53F40093FCD2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5F9308D8214C53F40093FCD2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -61,7 +141,6 @@
 		5FA41D73217A561A002637B0 /* RCheckout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RCheckout.swift; sourceTree = "<group>"; };
 		5FA41D79217A5F2C002637B0 /* IO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IO.swift; sourceTree = "<group>"; };
 		5FA41D7B217A61FF002637B0 /* JSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSON.swift; sourceTree = "<group>"; };
-		5FE13FE7218114F300658DA4 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,9 +154,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5F4C2F312183944600F7DE18 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5F4C2F3C2183944600F7DE18 /* ObjectMapper.framework */,
+				5F4C2F3E2183944600F7DE18 /* ObjectMapper.framework */,
+				5F4C2F402183944600F7DE18 /* ObjectMapper.framework */,
+				5F4C2F422183944600F7DE18 /* ObjectMapper.framework */,
+				5F4C2F442183944600F7DE18 /* ObjectMapper-iOSTests.xctest */,
+				5F4C2F462183944600F7DE18 /* ObjectMapper-MacTests.xctest */,
+				5F4C2F482183944600F7DE18 /* ObjectMapper-tvOSTests.xctest */,
+				5F4C2F4A2183944600F7DE18 /* libObjectMapper.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		5F9308CA214C53F40093FCD2 = {
 			isa = PBXGroup;
 			children = (
+				5F4C2F302183944600F7DE18 /* ObjectMapper.xcodeproj */,
 				5F9308D5214C53F40093FCD2 /* RobluScouterIOS */,
 				5F9308D4214C53F40093FCD2 /* Products */,
 			);
@@ -102,7 +197,6 @@
 				5F9308DD214C53F40093FCD2 /* Assets.xcassets */,
 				5F9308DF214C53F40093FCD2 /* LaunchScreen.storyboard */,
 				5F9308E2214C53F40093FCD2 /* Info.plist */,
-				5FE13FE7218114F300658DA4 /* Package.swift */,
 			);
 			path = RobluScouterIOS;
 			sourceTree = "<group>";
@@ -158,10 +252,12 @@
 				5F9308CF214C53F40093FCD2 /* Sources */,
 				5F9308D0214C53F40093FCD2 /* Frameworks */,
 				5F9308D1214C53F40093FCD2 /* Resources */,
+				5F4C2F4D2183945B00F7DE18 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				5F4C2F4C2183945800F7DE18 /* PBXTargetDependency */,
 			);
 			name = RobluScouterIOS;
 			productName = RobluScouterIOS;
@@ -195,12 +291,77 @@
 			mainGroup = 5F9308CA214C53F40093FCD2;
 			productRefGroup = 5F9308D4214C53F40093FCD2 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 5F4C2F312183944600F7DE18 /* Products */;
+					ProjectRef = 5F4C2F302183944600F7DE18 /* ObjectMapper.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				5F9308D2214C53F40093FCD2 /* RobluScouterIOS */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		5F4C2F3C2183944600F7DE18 /* ObjectMapper.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ObjectMapper.framework;
+			remoteRef = 5F4C2F3B2183944600F7DE18 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		5F4C2F3E2183944600F7DE18 /* ObjectMapper.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ObjectMapper.framework;
+			remoteRef = 5F4C2F3D2183944600F7DE18 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		5F4C2F402183944600F7DE18 /* ObjectMapper.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ObjectMapper.framework;
+			remoteRef = 5F4C2F3F2183944600F7DE18 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		5F4C2F422183944600F7DE18 /* ObjectMapper.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ObjectMapper.framework;
+			remoteRef = 5F4C2F412183944600F7DE18 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		5F4C2F442183944600F7DE18 /* ObjectMapper-iOSTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "ObjectMapper-iOSTests.xctest";
+			remoteRef = 5F4C2F432183944600F7DE18 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		5F4C2F462183944600F7DE18 /* ObjectMapper-MacTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "ObjectMapper-MacTests.xctest";
+			remoteRef = 5F4C2F452183944600F7DE18 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		5F4C2F482183944600F7DE18 /* ObjectMapper-tvOSTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "ObjectMapper-tvOSTests.xctest";
+			remoteRef = 5F4C2F472183944600F7DE18 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		5F4C2F4A2183944600F7DE18 /* libObjectMapper.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libObjectMapper.a;
+			remoteRef = 5F4C2F492183944600F7DE18 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		5F9308D1214C53F40093FCD2 /* Resources */ = {
@@ -224,7 +385,6 @@
 				5F9308D9214C53F40093FCD2 /* ViewController.swift in Sources */,
 				5F9308EF214C59BB0093FCD2 /* RForm.swift in Sources */,
 				5F355731215ED51200E9EE99 /* RTextfield.swift in Sources */,
-				5FE13FE8218114F300658DA4 /* Package.swift in Sources */,
 				5F355729215ED0F200E9EE99 /* RCounter.swift in Sources */,
 				5F355727215ECF3E00E9EE99 /* RChooser.swift in Sources */,
 				5F35572D215ED39A00E9EE99 /* RSlider.swift in Sources */,
@@ -246,6 +406,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5F4C2F4C2183945800F7DE18 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "ObjectMapper-iOS";
+			targetProxy = 5F4C2F4B2183945800F7DE18 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		5F9308DA214C53F40093FCD2 /* Main.storyboard */ = {
