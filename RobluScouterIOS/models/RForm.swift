@@ -14,11 +14,16 @@ class RForm : Mappable {
     public var pit:[RMetric]?;
     public var match:[RMetric]?;
     
-    init() {}
+    required init?(map: Map) {}
     
     init(pit:[RMetric], match:[RMetric]) {
         self.pit = pit;
         self.match = match;
     }
     
+    // Defines mapping to and from
+    func mapping(map: Map) {
+        pit <- map["pit"];
+        match <- map["match"];
+    }
 }
