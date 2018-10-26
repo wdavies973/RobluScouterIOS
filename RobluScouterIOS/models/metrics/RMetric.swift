@@ -51,7 +51,9 @@ class RMetric : Mappable {
     
     // This defines how things get mapped to and from JSON
     func mapping(map: Map) {
-        preconditionFailure("This method must be overriden by its children");
+        ID <- map["ID"];
+        title <- map["title"];
+        modified <- map["modified"];
     }
     
 }

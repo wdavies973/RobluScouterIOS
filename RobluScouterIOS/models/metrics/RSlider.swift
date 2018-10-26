@@ -40,6 +40,7 @@ class RSlider : RMetric {
     }
     
     override func mapping(map: Map) {
+        super.mapping(map: map);
         value <- map["value"]
         min <- map["min"]
         max <- map["max"]

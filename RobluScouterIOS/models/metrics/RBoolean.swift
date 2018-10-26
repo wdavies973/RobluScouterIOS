@@ -32,6 +32,8 @@ class RBoolean : RMetric {
     }
     
     override func mapping(map: Map) {
+        super.mapping(map: map);
+        
         value <- map["value"];
     }
     

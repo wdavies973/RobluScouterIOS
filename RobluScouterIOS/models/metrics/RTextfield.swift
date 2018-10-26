@@ -42,6 +42,7 @@ class RTextfield : RMetric {
     }
     
     override func mapping(map: Map) {
+        super.mapping(map: map);
         text <- map["text"];
         numericalOnly <- map["numericalOnly"];
         oneLine <- map["oneLine"];

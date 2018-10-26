@@ -39,6 +39,7 @@ class RCheckbox : RMetric {
     }
     
     override func mapping(map: Map) {
+        super.mapping(map: map);
         values <- map["values"];
     }
     

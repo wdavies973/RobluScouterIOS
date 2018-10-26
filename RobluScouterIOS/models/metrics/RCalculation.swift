@@ -83,6 +83,7 @@ class RCalculation : RMetric {
     }
     
     override func mapping(map: Map) {
+        super.mapping(map: map);
         lastValue <- map["lastValue"];
         calculation <- map["lastValue"];
     }

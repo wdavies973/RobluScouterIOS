@@ -14,7 +14,9 @@ class RForm : Mappable {
     public var pit:[RMetric]?;
     public var match:[RMetric]?;
     
-    required init?(map: Map) {}
+    required init?(map: Map) {
+        
+    }
     
     init(pit:[RMetric], match:[RMetric]) {
         self.pit = pit;
@@ -23,7 +25,10 @@ class RForm : Mappable {
     
     // Defines mapping to and from
     func mapping(map: Map) {
-        pit <- map["pit"];
-        match <- map["match"];
+        //self.pit = Mapper<RMetric>().mapArray(JSONObject: map["pit"].JSON);
+        //self.match = Mapper<RMetric>().mapArray(JSONObject: map["match"].JSON);
+        
+        pit <- map["pit"]
+        match <- map["match"]
     }
 }

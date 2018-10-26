@@ -38,6 +38,7 @@ class RStopwatch : RMetric {
     }
     
     override func mapping(map: Map) {
+        super.mapping(map: map);
         time <- map["time"]
         times <- map["times"]
     }

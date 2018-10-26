@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import ObjectMapper
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -45,6 +46,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func test() {
+        print("Running tests");
+        
         // Create some metrics
         var points = RCounter(ID: 1, title: "Points", increment: 1, value: 10);
         var good = RBoolean(ID: 2, title: "Good?", value: false);
@@ -72,6 +75,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         var testsPassed: Int = 0;
         let totalTests: Int = 1;
         if(team.getMetrics(page: 1).count == 9) {testsPassed += 1;}
+        
+        /* Try to serialize and then deserialize the RTeam object */
+        let JSONString = Mapper().toJSONString(form, prettyPrint: true);
+        print(JSONString)
         
         print("Tests passed: ",(testsPassed)," / ",totalTests)
     }

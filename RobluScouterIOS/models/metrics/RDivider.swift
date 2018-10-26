@@ -28,6 +28,7 @@ class RDivider : RMetric {
     }
     
     override func mapping(map: Map) {
+        super.mapping(map: map);
         // Nothing
     }
     

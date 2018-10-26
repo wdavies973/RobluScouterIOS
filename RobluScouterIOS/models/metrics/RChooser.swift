@@ -39,6 +39,7 @@ class RChooser : RMetric {
     }
     
     override func mapping(map: Map) {
+        super.mapping(map: map);
         values <- map["values"];
         selectedIndex <- map["selectedIndex"];
     }

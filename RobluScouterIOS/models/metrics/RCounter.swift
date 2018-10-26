@@ -51,6 +51,7 @@ class RCounter : RMetric {
     //else return String.valueOf(Utils.round(value, 2));
     //}
     override func mapping(map: Map) {
+        super.mapping(map: map);
         value <- map["value"];
         increment <- map["increment"];
         verboseInput <- map["verboseInput"];
